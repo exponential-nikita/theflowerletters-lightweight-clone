@@ -1,0 +1,79 @@
+.hero {
+  background: #f4ebdc;
+  padding: 20px 0 26px;
+}
+
+.hero__container {
+  display: flex;
+  max-width: 1440px;
+  padding: 2px 50px 0 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hero__container > div {
+  flex: 50%;
+}
+
+.hero__title {
+  font-family: "Brilon", serif;
+  color: #2b3b2b;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 67px;
+  margin: 50px 0 7px;
+}
+
+.hero__text {
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #5b5b5b;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__right img {
+  width: calc(100% + 100px);
+}
+
+.hero__button button {
+  background: #2b3b2b;
+  color: #fff;
+  width: 100%;
+  margin: 64px 0 10px;
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.76px;
+  line-height: 33px;
+  padding: 10px 60px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero__button button:hover {
+  background: #ef9177;
+}
+
+.hero__benefits {
+  display: flex;
+  column-gap: 40px;
+  padding-top: 15px;
+}
+
+.hero__benefits-item {
+  font-family: "EB Garamond", serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.4px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
