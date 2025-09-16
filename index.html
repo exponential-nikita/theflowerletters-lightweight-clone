@@ -24,8 +24,11 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://code.jquery.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
@@ -552,6 +555,90 @@
     </div>
   </section>
 
+  <section class="join-us">
+    <div class="join-us__container">
+      <div class="join-us__title">Gift The Flower Letters Today - Risk Free!</div>
+      <div class="join-us__subtitle">The Flower Letters is truly the gift that keeps on giving—and we’ve made it incredibly
+        easy to share!
+      </div>
+
+      <div class="carousel-controls">
+        <button class="prev">
+          <svg width="25" height="25" viewBox="0 0 39 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38.7071 8.20711C39.0976 7.81658 39.0976 7.18342 38.7071 6.79289L32.3431 0.428932C31.9526 0.0384078 31.3195 0.0384078 30.9289 0.428932C30.5384 0.819457 30.5384 1.45262 30.9289 1.84315L36.5858 7.5L30.9289 13.1569C30.5384 13.5474 30.5384 14.1805 30.9289 14.5711C31.3195 14.9616 31.9526 14.9616 32.3431 14.5711L38.7071 8.20711ZM0 8.5H38V6.5H0V8.5Z" fill="#2B3B2B"/>
+          </svg>
+        </button>
+
+        <button class="next">
+          <svg width="25" height="25" viewBox="0 0 39 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38.7071 8.20711C39.0976 7.81658 39.0976 7.18342 38.7071 6.79289L32.3431 0.428932C31.9526 0.0384078 31.3195 0.0384078 30.9289 0.428932C30.5384 0.819457 30.5384 1.45262 30.9289 1.84315L36.5858 7.5L30.9289 13.1569C30.5384 13.5474 30.5384 14.1805 30.9289 14.5711C31.3195 14.9616 31.9526 14.9616 32.3431 14.5711L38.7071 8.20711ZM0 8.5H38V6.5H0V8.5Z" fill="#2B3B2B"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel-item">
+          <h5>1</h5>
+          <p>Choose a story for your recipient.</p>
+        </div>
+        <div class="carousel-item">
+          <h5>2</h5>
+          <p>At checkout, enter your recipient’s shipping address.</p>
+        </div>
+        <div class="carousel-item">
+          <h5>3</h5>
+          <p>Download and print our beautiful <i>Printable Gift Introduction</i> to present the surprise.</p>
+        </div>
+        <div class="carousel-item">
+          <h5>4</h5>
+          <p>Watch their excitement grow as they receive their first letter.</p>
+        </div>
+        <div class="carousel-item">
+          <h5>5</h5>
+          <p>Twice a month, they’ll get a new installment in their story.</p>
+        </div>
+        <div class="carousel-item">
+          <h5>6</h5>
+          <p>Enjoy peace of mind with our 30-day refund policy and the ability to cancel anytime.</p>
+        </div>
+      </div>
+
+      <div class="join-us__text">
+        <p>
+          Don’t wait any longer! Surprise your loved ones with the unforgettable gift of The Flower Letters, filling their
+          days with excitement, anticipation, and joy. Our beautifully written stories will warm their hearts and create
+          lasting memories.
+        </p>
+        <br>
+        <p>
+          <b>Join the community of Flower Letters subscribers and become part of this magical journey!</b>
+        </p>
+      </div>
+
+      <div class="join-us__button">
+        <button>Choose Your Adventure</button>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 5000,
+        infinite: false,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+      });
+    });
+  </script>
 </body>
 
 </html>
