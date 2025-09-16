@@ -81,3 +81,54 @@
 .introducing {
   margin: 16px 0;
 }
+
+.how-it-works {
+  display: flex;
+  margin: 32px 264px;
+  padding: 30px 0 10px;
+}
+
+.how-it-works__container {
+  display: flex;
+  max-width: 1200px;
+  margin: 32px auto 32px 0;
+  box-sizing: border-box;
+}
+
+.how-it-works__container > div {
+  flex: 50%;
+}
+
+.how-it-works__left {
+  padding: 0 15px;
+}
+
+.how-it-works__left img {
+  width: calc(100% + 100px);
+  margin-left: -100px;
+}
+
+.how-it-works__right {
+  padding: 0 15px;
+}
+
+.how-it-works__title {
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  color: #2b3b2b;
+}
+
+.how-it-works__list {
+  margin-top: 16px;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4d555e;
+}
+
+.how-it-works__list ol {
+  list-style: decimal inside;
+}
