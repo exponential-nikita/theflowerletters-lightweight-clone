@@ -170,3 +170,48 @@
 .introducing img {
   margin: 16px 0;
 }
+
+.choose-your-adventure button {
+  background: #2b3b2b;
+  color: #fff;
+  width: 600px;
+  margin: 24px 0 36px;
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.76px;
+  line-height: 33px;
+  padding: 10px 60px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.choose-your-adventure__button {
+  text-align: center;
+}
+
+.choose-your-adventure__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px 10px;
+}
+
+.choose-your-adventure img {
+  width: 70%;
+}
+
+.choose-your-adventure__text {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -116px;
+}
+
+.choose-your-adventure__text p {
+  font-family: "EB Garamond", serif;
+  color: #4d555e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 50%;
+}
