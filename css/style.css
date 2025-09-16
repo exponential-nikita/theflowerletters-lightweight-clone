@@ -527,3 +527,25 @@
 .join-us__button button:hover {
   background: #ef9177;
 }
+
+.join-us-faq {
+  color: #2b3b2b;
+}
+
+.join-us-faq__title {
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.join-us-faq__qa-list {
+  display: flex;
+  column-gap: 30px;
+  padding: 38px 15px 10px;
+}
+
+.join-us-faq__qa-list > div {
+  flex: 50%;
+}
