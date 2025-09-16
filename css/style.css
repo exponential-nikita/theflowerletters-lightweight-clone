@@ -215,3 +215,47 @@
   line-height: 30px;
   width: 50%;
 }
+
+.stories-video {
+  padding: 30px 0 10px;
+}
+
+.stories-video__container {
+  display: flex;
+  padding: 82px 0 87px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stories-video__container > div {
+  flex: 50%;
+}
+
+.stories-video__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "EB Garamond", serif;
+  color: #4d555e;
+  padding: 0 15px;
+}
+
+.stories-video__text p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.stories-video__text-container {
+  max-width: 90%;
+  padding: 30px 0 10px;
+  margin: 0 auto;
+}
+
+.stories-video__text-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  padding-bottom: 25px;
+}
