@@ -78,10 +78,6 @@
   align-items: center;
 }
 
-.introducing {
-  margin: 16px 0;
-}
-
 .how-it-works {
   display: flex;
   margin: 32px 264px;
@@ -131,4 +127,46 @@
 
 .how-it-works__list ol {
   list-style: decimal inside;
+}
+
+.introducing__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introducing__text-introducing {
+  font-family: "EB Garamond", serif;
+  color: #2b3b2b;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.introducing__text-flower-letters {
+  font-family: "Brilon", serif;
+  color: #2b3b2b;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.introducing__text-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  font-family: "EB Garamond", serif;
+  color: #4d555e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.introducing__text-description p {
+  margin: 0;
+}
+
+.introducing img {
+  margin: 16px 0;
 }
