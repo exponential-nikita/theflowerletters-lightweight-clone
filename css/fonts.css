@@ -2,3 +2,14 @@
   font-family: Brilon;
   src: url('../fonts/Brilon.ttf');
 }
+
+@font-face {
+  font-family: Alice;
+  src: url('../fonts/alice.woff2');
+}
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
