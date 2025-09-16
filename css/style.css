@@ -440,7 +440,7 @@
   margin-top: 16px;
 }
 
-.carousel {
+.carousel, .carousel-2 {
   padding: 0 0 30px;
 }
 
@@ -457,7 +457,7 @@
   cursor: pointer;
 }
 
-.carousel-controls button.prev {
+.carousel-controls button.prev, .carousel-controls button.prev-2 {
   transform: rotate(180deg);
 }
 
@@ -465,7 +465,7 @@
   opacity: 0.3;
 }
 
-.carousel-item {
+.carousel-item, .carousel-2-item {
   font-family: "EB Garamond", serif;
   margin-right: 24px;
   background: #fff;
@@ -483,7 +483,16 @@
   margin: 0;
 }
 
-.carousel-item p {
+.carousel-2-item h5 {
+  font-family: "Lato", serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2b3b2b;
+  font-weight: 700;
+  margin: 0;
+}
+
+.carousel-item p, .carousel-2-item p {
   font-size: 20px;
   color: #5b5b5b;
   font-weight: 400;
@@ -548,4 +557,44 @@
 
 .join-us-faq__qa-list > div {
   flex: 50%;
+}
+
+.reviews {
+  padding: 30px 0 10px;
+}
+
+.reviews__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  font-family: "EB Garamond", serif;
+  color: #2b3b2b;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.carousel-2__button {
+  text-align: center;
+}
+
+.carousel-2__button button {
+  background: #2b3b2b;
+  color: #fff;
+  width: 600px;
+  margin: 0 0 10px;
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.76px;
+  line-height: 33px;
+  padding: 10px 60px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
 }
