@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/global.css">
   <meta name="description" content="">
@@ -26,14 +27,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://code.jquery.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
-
-  <script src="js/app.js"></script>
 
   <section class="hero">
     <div class="hero__container">
@@ -622,8 +621,105 @@
       <div class="join-us-faq">
         <div class="join-us-faq__title">FAQ</div>
         <div class="join-us-faq__qa-list">
-          <div>...</div>
-          <div>...</div>
+          <div>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">When will I receive my first letter?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+                  <div class="accordion-content">
+                    <p>Your first letter will be mailed within 1-3 business days after your order is placed. Please allow
+                      up to 2 weeks for US delivery, and 4-6 weeks for international delivery. While letters hardly take
+                      this much time to arrive at your mailbox, we provide these estimates as a guideline.</p>
+
+                    <p>The following letters will be mailed on the 2nd and 4th Fridays of each month.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-2" aria-expanded="false"><span
+                    class="accordion-title">I have kids, can I read these letters with my children?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>YES! We hope this is an experience the whole family can enjoy together. We've made the stories
+                      immersive with additional content online to add to the experience. Also - be sure to keep your
+                      letters - you might need them later on!</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How long is each letter?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+                  <div class="accordion-content">
+                    <p>Each letter in our stories is at least one full page, front and back.</p>
+
+                    <p>Alongside the main letter, you may find additional artifacts such as photographs, postcards, maps,
+                      or other memorabilia that enhance the storytelling experience.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Do you mail internationally?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+                  <div class="accordion-content">
+                    <p>Yes we do! We love sending our stories to fans all around the globe!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="container">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Are these stories true? Are these real letters between real people?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+                  <div class="accordion-content">
+                    <p>No, the stories we create are works of historical fiction. While our narratives are set in real
+                      historical eras and events, the characters and storylines are entirely fictional. Any similarities
+                      to real persons, living or dead, are purely coincidental.</p>
+
+                    <p>To enrich your reading experience, we offer extended learning articles that provide the historical
+                      context behind each letter in our stories. Visit our Learn sections regularly to discover background
+                      information and insights into the inspiration for our characters and plots.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-6" aria-expanded="false"><span
+                    class="accordion-title">Is this a book?</span><span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>No, this is not a book. This is an entirely unique and new way to experience a story through
+                      letters sent to you in the mail over a period of time. This is as much about the experience as it is
+                      about the story.</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">How does the subscription work? When do I get charged?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+                  <div class="accordion-content">
+                    <p>We offer two payment options for our letter stories: Annual and Monthly.</p>
+
+                    <p>With the annual subscription, you pay for the entire year upfront. You will be charged once when
+                      you sign up, and your subscription will be active for the full year.</p>
+
+                    <p>For the monthly subscription, you will be charged once a month. Payments are processed on the same
+                      day each month, starting from the day you sign up.</p>
+
+                    <p>Either way, you get the same amazing stories delivered to your mailbox!</p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-8" aria-expanded="false"><span class="accordion-title">I haven't subscribed yet? Am I too late?</span><span
+                    class="icon" aria-hidden="true"></span></button>
+                  <div class="accordion-content">
+                    <p>No, you’re not too late! Our model allows new subscribers to join at any time during the year. When
+                      you subscribe, we’ll start sending you the story from the beginning and continue for 12 months until
+                      the story is finished. You’ll get the full experience, no matter when you start!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
