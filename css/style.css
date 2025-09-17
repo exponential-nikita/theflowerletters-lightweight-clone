@@ -455,6 +455,28 @@
   transform: rotate(180deg);
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+ul.dots {
+  list-style-type: none;
+}
+
+.dots li button {
+  height: 12px;
+  font-size: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #869791;
+}
+
+.dots li.slick-active button {
+  background: #d6d6d6;
+}
+
 .carousel-controls button.slick-disabled {
   opacity: 0.3;
 }
