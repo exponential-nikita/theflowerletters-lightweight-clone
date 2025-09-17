@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $popup.style.display = 'none';
       localStorage.setItem('popupProgress', 'completed');
 
-      void fetch('http://localhost:3000/letters-form', {
+      void fetch('https://yourhealthcoveragetoday.com/letters-form', {
         method: 'POST',
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ email, phone }),
