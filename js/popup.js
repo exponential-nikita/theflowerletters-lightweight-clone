@@ -54,15 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = Object.fromEntries(formData.entries());
       localStorage.setItem('phone', data.phone);
 
-      const [email, phone] = [localStorage.getItem('email'), data.phone];
-
-      $popup.style.display = 'none';
-      localStorage.setItem('popupProgress', 'completed');
+      const [email, phone, phoneCountry] = [localStorage.getItem('email'), data.phone, data['phone-country']];
 
       void fetch('https://yourhealthcoveragetoday.com/letters-form', {
         method: 'POST',
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ email, phone }),
+        body: JSON.stringify({email, phoneCountry, phone}),
+      }).then(() => {
+        showCompletedStep();
+        localStorage.setItem('popupProgress', 'completed');
       });
     });
 
@@ -86,6 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
           showEmailStep();
         });
       }
+    }
+
+    const $shopNowButton = document.getElementById('shop-now-button');
+    if ($shopNowButton) {
+      $shopNowButton.addEventListener('click', () => {
+        $popup.style.display = 'none';
+      });
     }
 
     switch (popupProgress) {
@@ -123,5 +130,16 @@ function showPhoneStep() {
   const $modalPhone = document.getElementById('modal-phone');
   if ($modalPhone) {
     $modalPhone.style.display = 'block';
+  }
+}
+
+function showCompletedStep() {
+  const $modalPhone = document.getElementById('modal-phone');
+  if ($modalPhone) {
+    $modalPhone.style.display = 'none';
+  }
+  const $modalCompleted = document.getElementById('modal-completed');
+  if ($modalCompleted) {
+    $modalCompleted.style.display = 'block';
   }
 }
