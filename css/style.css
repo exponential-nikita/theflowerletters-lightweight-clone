@@ -680,7 +680,10 @@ ul.dots {
 }
 
 .popup__content-story-content {
-  /*width: 288px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup__content-text {
