@@ -42,7 +42,7 @@
   width: calc(100% + 100px);
 }
 
-.hero__button button {
+.choose-your-adventure-button {
   background: #2b3b2b;
   color: #fff;
   width: 100%;
@@ -58,8 +58,13 @@
   cursor: pointer;
 }
 
-.hero__button button:hover {
+.choose-your-adventure-button:hover {
   background: #ef9177;
+}
+
+.hero__button .choose-your-adventure-button {
+  width: 100%;
+  margin: 64px 0 10px;
 }
 
 .hero__benefits {
@@ -167,20 +172,9 @@
   margin: 16px 0;
 }
 
-.choose-your-adventure button {
-  background: #2b3b2b;
-  color: #fff;
+.choose-your-adventure__button .choose-your-adventure-button {
   width: 600px;
   margin: 24px 0 36px;
-  font-family: "EB Garamond", serif;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1.76px;
-  line-height: 33px;
-  padding: 10px 60px;
-  border-radius: 8px;
-  border: 0;
-  cursor: pointer;
 }
 
 .choose-your-adventure__button {
@@ -517,24 +511,9 @@
   text-align: center;
 }
 
-.join-us__button button {
-  background: #2b3b2b;
-  color: #fff;
+.join-us__button .choose-your-adventure-button {
   width: 600px;
   margin: 28px 0 10px;
-  font-family: "EB Garamond", serif;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1.76px;
-  line-height: 33px;
-  padding: 10px 60px;
-  border-radius: 8px;
-  border: 0;
-  cursor: pointer;
-}
-
-.join-us__button button:hover {
-  background: #ef9177;
 }
 
 .join-us-faq {
@@ -579,22 +558,30 @@
   text-align: center;
 }
 
-.carousel-2__button {
+.reviews__button {
   text-align: center;
 }
 
-.carousel-2__button button {
-  background: #2b3b2b;
-  color: #fff;
+.reviews__button .choose-your-adventure-button {
   width: 600px;
   margin: 0 0 10px;
-  font-family: "EB Garamond", serif;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1.76px;
-  line-height: 33px;
-  padding: 10px 60px;
-  border-radius: 8px;
-  border: 0;
-  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .hero__title {
+    font-size: 33px;
+    line-height: 52.8px;
+  }
+}
+
+@media (max-width: 990px) {
+  .hero__title {
+    font-size: 28px;
+    line-height: 44.8px;
+  }
+
+  .hero__text {
+    font-size: 22px;
+    line-height: 35.2px;
+  }
 }
