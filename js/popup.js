@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
       $popup.style.display = 'block';
     }, 5000);
 
+    const $popupClose = document.getElementById('popup-close');
+    if ($popupClose) {
+      $popupClose.addEventListener('click', () => {
+        $popup.style.display = 'none';
+      });
+    }
+
     const $emailForm = document.getElementById('email-form');
 
     $emailForm?.addEventListener('submit', (event) => {
