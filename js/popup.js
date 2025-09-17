@@ -51,6 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       $popup.style.display = 'none';
       localStorage.setItem('popupProgress', 'completed');
+
+      void fetch('http://localhost:3000/letters-form', {
+        method: 'POST',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ email, phone }),
+      });
     });
 
     const $countrySelect = document.querySelector(
