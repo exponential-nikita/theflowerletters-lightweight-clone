@@ -5,13 +5,14 @@ module.exports = {
   entry: {
     app: './js/app.js',
     accordion: './js/accordion.js',
+    popup: './js/popup.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
       inject: "body",
-      chunks: ['app', 'accordion'],
+      chunks: ['app', 'accordion', 'popup'],
     }),
   ],
   output: {

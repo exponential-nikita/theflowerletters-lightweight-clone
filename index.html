@@ -988,7 +988,7 @@
     });
   </script>
 
-  <div class="popup">
+  <div id="popup" class="popup" style="display: none">
     <div class="popup__background"></div>
     <div class="popup__content-container">
       <div class="popup__content">
@@ -1015,7 +1015,7 @@
                 Which story genre interests you the most?
               </div>
 
-              <div class="popup__content-buttons">
+              <div id="story-buttons" class="popup__content-buttons">
                 <button>World War II Romance</button>
                 <button>Regency Romance</button>
                 <button>Fantasy Adventure</button>
@@ -1034,11 +1034,11 @@
             </div>
 
             <div class="popup__content-story-content">
-              <div class="popup__content-submit-form">
-                <input id="email" placeholder="Your email address" autocomplete="email" name="email">
+              <form id="email-form" class="popup__content-submit-form">
+                <input id="email" required placeholder="Your email address" autocomplete="email" name="email">
 
                 <button>Claim Discount</button>
-              </div>
+              </form>
             </div>
           </div>
 
@@ -1058,11 +1058,10 @@
                 By submitting this form, you agree to receive recurring automated promotional and personalized marketing text messages (e.g. cart reminders) from us at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies. Msg and data rates may apply.
               </span>
 
-              <div class="popup__content-submit-form">
+              <form id="phone-form" class="popup__content-submit-form">
                 <div class="popup__content-submit-form-phone">
                   <div class="popup__content-submit-form-phone-country">
-                    <select name="phoneCountry" class="popup__content-submit-form-phone-country-select">
-                      <option value="ZZ">International</option>
+                    <select name="phone-country" class="popup__content-submit-form-phone-country-select">
                       <option value="AF">Afghanistan</option>
                       <option value="AX">Åland Islands</option>
                       <option value="AL">Albania</option>
@@ -1295,7 +1294,7 @@
                       <option value="UA">Ukraine</option>
                       <option value="AE">United Arab Emirates</option>
                       <option value="GB">United Kingdom</option>
-                      <option value="US">United States</option>
+                      <option value="US" selected>United States</option>
                       <option value="UY">Uruguay</option>
                       <option value="UZ">Uzbekistan</option>
                       <option value="VU">Vanuatu</option>
@@ -1310,17 +1309,17 @@
                       <option value="ZW">Zimbabwe</option>
                     </select>
                     <div>
-                      <img class="popup__content-submit-form-phone-country-icon" alt="Icon" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/AL.svg">
+                      <img class="popup__content-submit-form-phone-country-icon" alt="Icon" src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg">
                     </div>
                     <div>
                       <img src="./img/country-select-arrow.svg" alt="Icon" width="9" />
                     </div>
                   </div>
-                  <input type="tel" inputmode="numeric" pattern="[0-9]*" autocomplete="tel" placeholder="Your phone number" name="phone" class="popup__content-submit-form-phone-input" value="">
+                  <input id="phone-input" type="tel" required inputmode="numeric" pattern="[0-9]*" autocomplete="tel" placeholder="Your phone number" name="phone" class="popup__content-submit-form-phone-input" value="">
                 </div>
 
                 <button>Activate Discount</button>
-              </div>
+              </form>
             </div>
           </div>
         </div>

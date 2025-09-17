@@ -875,6 +875,33 @@ ul.dots {
     margin: 0 auto;
     max-width: 90%;
   }
+
+  .popup__close {
+    left: unset;
+    right: 16px;
+    top: 16px;
+  }
+
+  .popup__content {
+    width: 88%;
+    height: 92%;
+  }
+
+  .popup__content-title {
+    font-size: 28px;
+  }
+
+  .popup__content-text {
+    width: 272px;
+  }
+
+  .popup__left-bottom-corner {
+    display: none;
+  }
+
+  .popup__right-bottom-corner {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
